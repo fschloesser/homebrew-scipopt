@@ -3,14 +3,15 @@
 class Test < Formula
   desc ""
   homepage ""
-  url "https://github.com/fschloesser/test/archive/v0.0.1.tar.gz"
-  sha256 "0fdc4a206f09886254805b4ad2f016ca61114e7a34644af8903da643f7cde575"
+  url "https://github.com/fschloesser/test/archive/v0.0.2.tar.gz"
+  sha256 "9339aef379518f080c0b4f7b8c905f9dd6ff9b00f9910b99f510acb6f236ffc5"
+  license ""
 
   # depends_on "cmake" => :build
 
   def install
     # test
-    bin.install custom-test
+    bin.install custom_test
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     # system "./configure", "--disable-debug",
